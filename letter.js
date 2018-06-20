@@ -1,7 +1,11 @@
-// Getting inquirer
-const inquirer = require('inquirer');
+/* 
+dependency for testing
+*/
+// const inquirer = require('inquirer');
 
-// created an array of letters for testing
+/* 
+created an array of letters for testing
+*/
 // const list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 // constructor that will hold a random guessed letter and check by boolean
@@ -10,7 +14,9 @@ var Letter = function (currentLetter, guessCheck) {
     this.guessCheck = false;
 };
 
-// New inquirer for testing
+/****************** 
+New inquirer for testing
+*****************/
 // var testing = function () {
 //     inquirer.prompt([
 //         {
