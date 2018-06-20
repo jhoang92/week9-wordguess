@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 const list = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
 
 // a portion of our game logic
-var word = (compChoices) => {
+var Word = function(compChoices) {
     this.compChoices = compChoices;
 
     this.playerAnswer = compChoices[Math.floor(Math.random * compChoices)];
@@ -23,7 +23,7 @@ var word = (compChoices) => {
         return this.chosenLetter;
     };
 
-    this.answerCheck = (playerGuess, compArray) => {
+    this.answerCheck = function(playerGuess, compArray) {
         var letterGuess = new Letter(playerGuess);
 
         var matching = letterGuess.findMatches(playerGuess, compArray);
@@ -38,4 +38,4 @@ var word = (compChoices) => {
     };
 };
 
-module.exports = word;
+module.exports = Word;

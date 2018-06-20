@@ -40,4 +40,4 @@ New inquirer for testing
 // }
 // testing();
 
-module.exports = letter;
+module.exports = Letter;
